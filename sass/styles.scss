@@ -1,0 +1,136 @@
+$titleme: "Pacifico", cursive;
+$titleall: "Pangolin", cursive;
+$white: #fffdfd;
+$colorTitle: #6a74fb;
+$colorBorder:  #f19216;
+body {
+  font-family: $titleall;
+  background-image: url(../images/fondo.jpg);
+}
+
+.mainContainer {
+  width: 500px;
+  margin: 5em auto;
+  border: 10px solid #000000;
+  border-radius: 15px;
+  height: 470px;
+  background-color: #f9e9e0; // rgb(246, 230, 230);
+  .container {
+    text-align: center;
+  }
+  h1 {
+    font-family: $titleme;
+    color: $colorTitle;
+  }
+}
+.intro {
+  p {
+    height: 8px;
+  }
+}
+.formu {
+  text-align: center;
+  .entry {
+    width: 270px;
+    height: 20px;
+    margin: 10px;
+  }
+}
+.ocultar {
+  display: none;     
+  
+}
+
+.buttons {
+  display: block;
+  background-color: $colorBorder;
+  border-radius: 10px;
+  width: 270px;
+  height: 37px;
+  margin: 10px auto;
+  color: $white;
+  font-family: $titleall;
+  font-size: 18px;
+}
+
+.imagesAll {
+  position: relative;
+  top:-160px;
+  margin: 16%;
+  left: 50px;
+  .boxAttempts{
+    border-radius: 5px;
+    border: 3px solid$colorTitle;
+    background-color: $white;
+    position: absolute;
+    top: 375px;
+    margin: 83px;
+    left: -71px;
+    width: 570px;
+    height: 28px;
+  }
+    .attempts{
+     margin: 245px;
+    }
+}
+
+#memoT {
+  background: #f9e9e0;
+  border: 10px solid #000000;
+  border-radius: 15px;
+  width: 1100px;
+  height: 615px;
+  margin: 0 auto;
+  //padding: 24px;
+  .imagesTapada {
+    border: $colorBorder 1px solid;
+    width: 19%;
+    float: left;  
+    margin: 4px;
+    //flex-direction: column;
+    // padding:20px;
+    // font-size:64px;
+    // cursor:pointer;
+    // text-align:center;
+  }
+ 
+  img {
+    width: 100%;
+    float: left;
+    cursor: pointer;
+    
+    // align-items: center;
+    //height:62%;
+    //padding:10px;
+    
+  }
+}
+
+
+.name{
+   width:500px;
+   margin: 10px;
+   line-height: 5px;
+   h2{
+     width: 990px;
+      font-family: $titleme;
+     color: $colorTitle;
+     text-align: center;
+   }
+   .hello{
+       text-align: center;
+       width: 990px;
+       
+     }
+     .texto{
+      text-align: center;
+      width: 990px;
+     }
+     .level{
+      text-align: center;
+      width: 990px;
+     }
+ }
+
+
+

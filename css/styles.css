@@ -1,0 +1,116 @@
+body {
+  font-family: "Pangolin", cursive;
+  background-image: url(../images/fondo.jpg);
+}
+
+.mainContainer {
+  width: 500px;
+  margin: 5em auto;
+  border: 10px solid #000000;
+  border-radius: 15px;
+  height: 470px;
+  background-color: #f9e9e0;
+}
+.mainContainer .container {
+  text-align: center;
+}
+.mainContainer h1 {
+  font-family: "Pacifico", cursive;
+  color: #6a74fb;
+}
+
+.intro p {
+  height: 8px;
+}
+
+.formu {
+  text-align: center;
+}
+.formu .entry {
+  width: 270px;
+  height: 20px;
+  margin: 10px;
+}
+
+.ocultar {
+  display: none;
+}
+
+.buttons {
+  display: block;
+  background-color: #f19216;
+  border-radius: 10px;
+  width: 270px;
+  height: 37px;
+  margin: 10px auto;
+  color: #fffdfd;
+  font-family: "Pangolin", cursive;
+  font-size: 18px;
+}
+
+.imagesAll {
+  position: relative;
+  top: -160px;
+  margin: 16%;
+  left: 50px;
+}
+.imagesAll .boxAttempts {
+  border-radius: 5px;
+  border: 3px solid #6a74fb;
+  background-color: #fffdfd;
+  position: absolute;
+  top: 375px;
+  margin: 83px;
+  left: -71px;
+  width: 570px;
+  height: 28px;
+}
+.imagesAll .attempts {
+  margin: 245px;
+}
+
+#memoT {
+  background: #f9e9e0;
+  border: 10px solid #000000;
+  border-radius: 15px;
+  width: 1100px;
+  height: 615px;
+  margin: 0 auto;
+}
+#memoT .imagesTapada {
+  border: #f19216 1px solid;
+  width: 19%;
+  float: left;
+  margin: 4px;
+}
+#memoT img {
+  width: 100%;
+  float: left;
+  cursor: pointer;
+}
+
+.name {
+  width: 500px;
+  margin: 10px;
+  line-height: 5px;
+}
+.name h2 {
+  width: 990px;
+  font-family: "Pacifico", cursive;
+  color: #6a74fb;
+  text-align: center;
+}
+.name .hello {
+  text-align: center;
+  width: 990px;
+}
+.name .texto {
+  text-align: center;
+  width: 990px;
+}
+.name .level {
+  text-align: center;
+  width: 990px;
+}
+
+/*# sourceMappingURL=styles.css.map */

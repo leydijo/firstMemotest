@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Memotest</title>
+</head>
+
+<body>
+    <div id="memoT" class="ocultar">
+
+        <div class="name">
+            <h2>Memotest</h2>
+            <div class="hello">
+                <p id="welcome"></p>
+            </div>
+            <div class="texto">
+                <p class="">Encontra todos los pares en menos de 18 intentos </p>
+            </div>
+
+            <div class="level">
+                <p>Nivel</p>
+            </div>
+        </div>
+
+
+        <div id="imagesAll" class="imagesAll">
+            <div  class="imagesTapada">
+                <img data-id="1" id="img-1" src="images/tapada.jpg" data-img="" />
+            </div>
+            <div class="imagesTapada">
+                <img  data-id="2" id="img-2" src="images/tapada.jpg" data-img="" />
+            </div>
+            <div class="imagesTapada">
+                <img  data-id="3" id="img-3"src="images/tapada.jpg" data-img="" />
+            </div>
+            <div class="imagesTapada">
+                <img  data-id="4" id="img-4" src="images/tapada.jpg" data-img="" />
+            </div>
+            <div class="imagesTapada">
+                <img data-id="5" id="img-5" src="images/tapada.jpg" data-img="" />
+            </div>
+            <div class="imagesTapada">
+                <img  data-id="6" id="img-6" src="images/tapada.jpg" data-img="" />
+            </div>
+            <div class="imagesTapada">
+                <img  data-id="7" id="img-7" src="images/tapada.jpg" data-img="" />
+            </div>
+            <div class="imagesTapada">
+                <img data-id="8" id="img-8" src="images/tapada.jpg" data-img="" />
+            </div>
+            <div class="imagesTapada">
+                <img  data-id="9" id="img-9" src="images/tapada.jpg" data-img="" />
+            </div>
+            <div class="imagesTapada">
+                <img  data-id="10" id="img-10" src="images/tapada.jpg" data-img="" />
+            </div>
+            <div class="imagesTapada">
+                <img  data-id="11" id="img-11" src="images/tapada.jpg" data-img="" />
+            </div>
+            <div class="imagesTapada">
+                <img  data-id="12" id="img-12" src="images/tapada.jpg" data-img="" />
+            </div>
+            <div class="boxAttempts">
+                <span class="attempts">Intentos:</span>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="mainContainer">
+        <div class="container">
+            <h1>Memotest</h1>
+            <div class="intro">
+                <p>Hola <i class="em em-clap"></i> !Vamos a jugar al Memotest</p>
+                <p>pero antes de empezar...</p>
+                <p>Cual es tu nombre <i class="em em-question"></i></p>
+            </div>
+
+        </div>
+        <div class="formu">
+            <form method="post">
+                <div id="inputText">
+                    <input id="validar" type="text" class="entry" value="">
+                </div>
+
+                <div class="textFirst">
+                    <p>Con que dificultad te gustaria jugar?</p>
+                </div>
+
+                <button id="easy" class="buttons">Facil</button>
+                <button class="buttons"> Intermedio</button>
+                <button class="buttons">Experto</button>
+                <span class="advert"></span>
+            </form>
+        </div>
+
+    </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -86,26 +86,15 @@ body {
     border: $colorBorder 1px solid;
     width: 19%;
     float: left;  
-    margin: 4px;
-    //flex-direction: column;
-    // padding:20px;
-    // font-size:64px;
-    // cursor:pointer;
-    // text-align:center;
+    margin: 4px; 
   }
- 
   img {
     width: 100%;
     float: left;
     cursor: pointer;
-    
-    // align-items: center;
-    //height:62%;
-    //padding:10px;
-    
   }
+  
 }
-
 
 .name{
    width:500px;
@@ -129,8 +118,17 @@ body {
      .level{
       text-align: center;
       width: 990px;
+      
      }
+ }
+ .flip{
+   transform: rotateY(180deg);
+   transform-style: preserve-3d;
+   transition: all 0.5s linear;
  }
 
 
-
+.pintar{
+  
+  opacity: 0.1;
+}

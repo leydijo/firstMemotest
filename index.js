@@ -53,10 +53,43 @@ $(".buttons").on('click',function(){
   $("#welcome").html(`<p>Hola  ${name} </p>`); 
 })
 
+//efecto flip
+$('.imagesTapada').on('click',function() {
+  $(this).addClass('flip')
+}); 
+
 
 //comprobar si son iguales
-
-
-
-
-
+$('img').on('click', function() {
+  clicks = clicks + 1
+  if (clicks == 1) {
+    var id = $(this).attr('id')
+    var img = $(this).attr('data-img')
+    firstClick = {
+      id: id,
+      img: img
+    }
+    
+  } else {
+    if (firstClick.img == $(this).attr('data-img')) {
+    
+        //$(this).addClass('pintar')
+  
+      console.log(firstClick)
+      
+      
+      // si le doy dos veces click a la misma imagen me toma que es igual, es porque estoy capturando el click
+    } else {
+      var that= this
+      setTimeout(function(){
+        $(that).attr('src', "images/tapada.jpg")
+        $('#'+firstClick.id).attr('src',"images/tapada.jpg")
+      },2000)
+     
+      console.log('no son iguales')
+       
+    }
+    //COMPARACION
+    clicks = 0
+  }
+})

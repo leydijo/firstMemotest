@@ -70,9 +70,9 @@ body {
   }
   .attempts {
     margin: 271px;
-    color:$colorBorder;
+    color: $colorBorder;
   }
-  .text{
+  .text {
     margin: 190px;
     margin-top: -20px;
   }
@@ -134,7 +134,7 @@ body {
 
 .minMod {
   width: 30%;
-  height: 306px;
+  height: 50%;
   border: 3px solid #000000;
   border-radius: 8px;
   background-color: #f9e9e0;
@@ -142,6 +142,7 @@ body {
   top: 21px;
   margin: 2px;
   margin-left: 399px;
+
   input {
     background-color: $colorBorder;
     border-radius: 17px;
@@ -176,11 +177,15 @@ body {
     border: 1px black solid;
     border-collapse: collapse;
   }
-  td{
+  td {
     border: 1px black solid;
     border-collapse: collapse;
     height: 53px;
     width: 68px;
     text-align: center;
   }
+}
+
+.trans {
+  opacity: 0.5;
 }

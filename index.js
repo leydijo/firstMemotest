@@ -3,6 +3,7 @@ var primerClick;
 var attempts = 0;
 var hits = 0;
 var niveles = 0;
+var num = 0;
 var inName = $("#validar").val();
 
 var tableImages = $(".tableImages");
@@ -62,24 +63,29 @@ $("img").on("click", function(e) {
 
 // capturar el nombe y mostrarlo
 $(".buttons").on("click", function() {
-   inName = $("#validar").val();
+  inName = $("#validar").val();
   $("#welcome").html(`<p>Hola  ${inName} </p>`);
+  
 });
 
 //capturar nivel
 $("#easy").on("click", function() {
   niveles = "facil";
-  $("#level").html(`<p> Nivel  ${niveles} </p>`);
+  num = 18;
+  $("#level").html(` </p><p>Encontra todos los pares en menos de <font color="blue">${num}</font> intentos</p><p> Nivel  ${niveles}`);
+ 
 });
 
 $("#intermediate").on("click", function() {
   niveles = "intermedio";
-  $("#level").html(`<p> Nivel  ${niveles} </p>`);
+  num = 12;
+  $("#level").html(` </p><p>Encontra todos los pares en menos de <font color="blue">${num}</font> intentos</p><p> Nivel  ${niveles}`);
 });
 
 $("#expert").on("click", function() {
   niveles = "experto";
-  $("#level").html(`<p> Nivel  ${niveles} </p>`);
+  num = 9;
+  $("#level").html(` </p><p>Encontra todos los pares en menos de <font color="blue">${num}</font> intentos</p><p> Nivel  ${niveles}`);
 });
 
 //efecto flip
@@ -104,33 +110,34 @@ $("img").on("click", function() {
       $("#" + firstClick.id).addClass("pintar");
       attempts = attempts + 1;
       hits = hits + 1;
-      if (attempts <= 18 && hits == 6) {
+
+      if (attempts <= num && hits == 6) {
         var inName = $("#validar").val();
         var winners = {
           name: inName,
           level: attempts,
           intentos: niveles
-        }
-        var saveInfo = localStorage.getItem('info')
+        };
+        var saveInfo = localStorage.getItem("info");
         saveInfo = JSON.parse(saveInfo);
 
-        if (saveInfo == null){
-          saveInfo = []
+        if (saveInfo == null) {
+          saveInfo = [];
         }
 
-        saveInfo.push(winners)
-        
+        saveInfo.push(winners);
+
         // pasar mi obj a un string
-        localStorage.setItem('info', JSON.stringify(saveInfo))
-        
-        var winnersHtml = ''
+        localStorage.setItem("info", JSON.stringify(saveInfo));
+
+        var winnersHtml = "";
         $(".minMod").removeClass("ocultar");
         for (var i = 0; i < saveInfo.length; i++) {
           winnersHtml += `<tr>
             <td>${saveInfo[i].name}</td> 
             <td>${saveInfo[i].level}</td>
             <td>${saveInfo[i].intentos}</td>
-          </tr>` 
+          </tr>`;
         }
         $(".minMod")
           .html(`<p> Ganaste  <i class="em em-bouquet"></i> ! con  ${attempts} intentos.<p> Ya podes volver a jugar</p></p> <table  class="ranking">
@@ -142,7 +149,7 @@ $("img").on("click", function() {
         ${winnersHtml}
      </table> `);
         $(".minMod").append(
-          `<a  href="index.html"><input type="botton"  name="button" value="VOLVER A JUGAR"/></a>`
+          `<a  href="index.html"><input type="botton"  name="button" value="VOLVER A JUGAR"/> </a>`
         );
         // attempts = 0
       }
@@ -153,8 +160,16 @@ $("img").on("click", function() {
       setTimeout(function() {
         $(that).attr("src", "images/tapada.jpg");
         $("#" + firstClick.id).attr("src", "images/tapada.jpg");
-      }, 2000);
+      }, 1000);
       attempts = attempts + 1;
+    }
+    if (attempts > num) {
+      $(".minMod").removeClass("ocultar");
+      $(".minMod").html(
+        `<p> PERDISTE <i class="em em-worried"></i> </p> <a  href="index.html"><input type="botton"  name="button" value="VOLVER A INTENTAR"/></a>`
+      );
+      $("#memoT").addClass("trans");
+      attempts = attempts - 1;
     }
 
     $(".attempts").html(` ${attempts} `);

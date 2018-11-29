@@ -107,7 +107,7 @@ body {
 
 .minMod {
   width: 30%;
-  height: 306px;
+  height: 50%;
   border: 3px solid #000000;
   border-radius: 8px;
   background-color: #f9e9e0;
@@ -151,5 +151,8 @@ body {
     height: 53px;
     width: 68px;
     text-align: center; }
+
+.trans {
+  opacity: 0.5; }
 
 /*# sourceMappingURL=styles.css.map */

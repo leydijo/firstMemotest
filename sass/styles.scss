@@ -2,7 +2,7 @@ $titleme: "Pacifico", cursive;
 $titleall: "Pangolin", cursive;
 $white: #fffdfd;
 $colorTitle: #6a74fb;
-$colorBorder:  #f19216;
+$colorBorder: #f19216;
 body {
   font-family: $titleall;
   background-image: url(../images/fondo.jpg);
@@ -37,8 +37,7 @@ body {
   }
 }
 .ocultar {
-  display: none;     
-  
+  display: none;
 }
 
 .buttons {
@@ -55,10 +54,10 @@ body {
 
 .imagesAll {
   position: relative;
-  top:-160px;
+  top: -160px;
   margin: 16%;
   left: 50px;
-  .boxAttempts{
+  .boxAttempts {
     border-radius: 5px;
     border: 3px solid$colorTitle;
     background-color: $white;
@@ -69,9 +68,14 @@ body {
     width: 570px;
     height: 28px;
   }
-    .attempts{
-     margin: 245px;
-    }
+  .attempts {
+    margin: 271px;
+    color:$colorBorder;
+  }
+  .text{
+    margin: 190px;
+    margin-top: -20px;
+  }
 }
 
 #memoT {
@@ -85,49 +89,98 @@ body {
   .imagesTapada {
     border: $colorBorder 1px solid;
     width: 19%;
-    float: left;  
-    margin: 4px; 
+    float: left;
+    margin: 4px;
   }
   img {
     width: 100%;
     float: left;
     cursor: pointer;
   }
-  
 }
 
-.name{
-   width:500px;
-   margin: 10px;
-   line-height: 5px;
-   h2{
-     width: 990px;
-      font-family: $titleme;
-     color: $colorTitle;
-     text-align: center;
-   }
-   .hello{
-       text-align: center;
-       width: 990px;
-       
-     }
-     .texto{
-      text-align: center;
-      width: 990px;
-     }
-     .level{
-      text-align: center;
-      width: 990px;
-      
-     }
- }
- .flip{
-   transform: rotateY(180deg);
-   transform-style: preserve-3d;
-   transition: all 0.5s linear;
- }
+.name {
+  width: 500px;
+  margin: 10px;
+  line-height: 5px;
+  h2 {
+    width: 990px;
+    font-family: $titleme;
+    color: $colorTitle;
+    text-align: center;
+  }
+  .hello {
+    text-align: center;
+    width: 990px;
+  }
+  .texto {
+    text-align: center;
+    width: 990px;
+  }
+  .levels {
+    text-align: center;
+    width: 990px;
+  }
+}
+.flip {
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+}
 
-.pintar{
-  
-  opacity: 0.5;
+.pintar {
+  filter: grayscale(100%);
+}
+
+.minMod {
+  width: 30%;
+  height: 306px;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  background-color: #f9e9e0;
+  position: absolute;
+  top: 21px;
+  margin: 2px;
+  margin-left: 399px;
+  input {
+    background-color: $colorBorder;
+    border-radius: 17px;
+    width: 198px;
+    height: 48px;
+    margin: 21px;
+    color: $white;
+    font-family: $titleall;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    top: 79px;
+    margin-left: 96px;
+    text-align: center;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+    font-family: $titleall;
+    margin: 30px;
+    line-height: 1;
+    height: 0;
+  }
+}
+
+.ranking {
+  border-collapse: collapse;
+  border: 1px black solid;
+  margin: 85px;
+  margin-top: 94px;
+  th {
+    border: 1px black solid;
+    border-collapse: collapse;
+  }
+  td{
+    border: 1px black solid;
+    border-collapse: collapse;
+    height: 53px;
+    width: 68px;
+    text-align: center;
+  }
 }
